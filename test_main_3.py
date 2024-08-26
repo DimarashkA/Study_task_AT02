@@ -13,6 +13,4 @@ def test_add_or_get_user(db_conn):
     add_user(db_conn, 'John', 30)
     user = get_user(db_conn, 'John')
 
-    # Предполагаем, что get_user возвращает словарь
     assert user == {'id': 1, 'name': 'John', 'age': 30}
-
